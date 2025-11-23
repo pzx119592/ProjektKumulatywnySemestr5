@@ -77,6 +77,3 @@ class Program
         // Program zawiera tylko definicje klas, interfejsów i generyków.
     }
 }
-
-
-// TEST
