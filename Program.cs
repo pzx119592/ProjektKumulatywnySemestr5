@@ -1,8 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
 
-// --- Interfejsy ---
-// Zadanie 2: Interfejsy i abstrakcja
 public interface IAnswer
 {
     string Text { get; set; }
@@ -21,8 +19,6 @@ public interface IQuiz<TQuestion, TAnswer>
     List<TQuestion> Questions { get; }
 }
 
-// --- Klasy ---
-// Zadanie 1: Programowanie obiektowe
 public class Answer : IAnswer
 {
     public string Text { get; set; }
@@ -51,8 +47,6 @@ public class Quiz<TQuestion, TAnswer> : IQuiz<TQuestion, TAnswer>
     }
 }
 
-// --- Generyczny magazyn danych ---
-// Zadanie 3: Generyki – zarządzanie danymi związanymi z quizami
 public class DataStore<T>
 {
     private List<T> items = new List<T>();
@@ -68,12 +62,10 @@ public class DataStore<T>
     }
 }
 
-// --- Program główny ---
 class Program
 {
     static void Main()
     {
-        // W tej wersji nie ma logiki quizu ani wypisywania na konsolę.
-        // Program zawiera tylko definicje klas, interfejsów i generyków.
+
     }
 }
